@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e2508ea959.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="title-container">
+      <h1>Length Converter</h1>
+    </div>
+
+    <!-- Amount to be converted -->
+    <form id="length-form">
+    <div class="amount-container">
+      <label for="amount">Enter Amount</label>
+      <input type="number" name="number" id="amount">
+    </div>
+
+    <!-- Unit Converter -->
+    <div class="unit-container">
+      <div class="left">
+        <p>From</p>
+        <div class="select-container from">
+          <select name="from" id="from">
+            <option value="millimeter">Millimeter</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="inch">Inch</option>
+            <option value="foot">Foot</option>
+            <option value="yard">Yard</option>
+          </select>
+        </div>
+      </div>
+   
+      <div class="right">
+        <p>To</p>
+        <div class="select-container to">
+          <select name="to" id="to">
+            <option value="millimeter">Millimeter</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="inch">Inch</option>
+            <option value="foot">Foot</option>
+            <option value="yard">Yard</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons-container">
+      <button id="btn-calculate" class="btn btn-calculate" type="submit" >Calculate</button>
+    </div>
+  </form>
+  
+  <div class="buttons-container">
+    <button id="btn-reset" class="btn btn-reset">Clear</button>
+  </div>
+
+
+  
+  <h2>Results</h2>
+  <div id="middle">
+    <i class="fa-solid fa-cog fa-spin"></i>
+  </div>
+  <div id="results"></div>
+
+  
+
+</main>
+
+</body>
+<script src="app.js"></script>
+</html>
